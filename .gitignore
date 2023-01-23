@@ -15,6 +15,7 @@ buildNumber.properties
 #IDEA
 .idea
 .idea/*
+workspace.xml
 
 
 ### IntelliJ IDEA ###
