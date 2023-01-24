@@ -75,5 +75,14 @@ public abstract class Transport implements Repairable
         return isRepairing;
     }
 
-
+    @Override
+    public String toString() {
+        return "Transport{" +
+                "name='" + name + '\'' +
+                ", capacity=" + capacity +
+                ", speed=" + speed +
+                ", costOfKm=" + costOfKm +
+                ", isRepairing=" + isRepairing +
+                '}';
+    }
 }

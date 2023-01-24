@@ -1,8 +1,8 @@
 package org.example;
 
-import org.springframework.stereotype.Component;
 
-@Component
+
+
 public class TransportFactory {
 
     public Transport getTransport(City city, int weight, int hours){
