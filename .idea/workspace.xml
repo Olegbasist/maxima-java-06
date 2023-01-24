@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f30159f8-45b4-4896-8983-8fb381846b18" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Logistics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Plane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Repairable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Ship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Transport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TransportFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TransportFactoryAnotherTry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Truck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Logistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Logistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransportFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TransportFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +43,20 @@
     "last_opened_file_path": "C:/Users/Олег/Documents/GitHub/maxima-java-06/src/main/java/org/example"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Олег\Documents\GitHub\maxima-java-06\src\main\java\org\example" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Run App" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="maxima-java-06" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -61,7 +68,7 @@
       <workItem from="1666626665511" duration="956000" />
       <workItem from="1666694729252" duration="66000" />
       <workItem from="1674469134561" duration="817000" />
-      <workItem from="1674532844012" duration="1906000" />
+      <workItem from="1674532844012" duration="2666000" />
     </task>
     <servers />
   </component>
