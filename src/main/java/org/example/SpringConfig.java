@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Configuration;
 public class SpringConfig {
 
     @Bean
-    public TransportFactory transportFactory(){
-        return new TransportFactory();
+    public TransportFactoryAnotherTry anotherTransportFactory(){
+        return new TransportFactoryAnotherTry();
     }
 
     @Bean
