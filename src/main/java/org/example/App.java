@@ -34,13 +34,13 @@ public class App
 
         return new City("City of Random",distance,hasAirport,isOnWater);
         }
-        /*private static void getTransportFromFactory (TransportFactory factory){
+        /*private static void getTransportForRandomCargo (TransportFactory transportFactory){
             Random random = new Random();
             int weight = random.nextInt(10000);
             int hours = random.nextInt(24);
 
-            System.out.println(factory.getTransport(getRandomCity(),weight,hours).getName());
-            //return factory.getTransport(getRandomCity(), weight,hours);
+            System.out.println(transportFactory.getTransport(getRandomCity(),weight,hours).getName());
+            //return transportFactory.getTransport(getRandomCity(), weight,hours);
 
         }*/
 
