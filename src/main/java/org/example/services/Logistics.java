@@ -3,9 +3,8 @@ package org.example.services;
 import org.example.model.Transport;
 import org.example.model.City;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
-@Component
+
 public class Logistics {
 
     Transport[] vehicles;

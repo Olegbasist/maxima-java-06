@@ -1,38 +1,42 @@
 package org.example.services;
 
+/*      Методы округления всегда вызываются с одними и теми же параметрами getRightCapacity(weight), getRightSpeed(requiredSpeed)
+        - это индикатор того что в них нет вариативности, их код можно просто в getTransport включить.
+
+        Округление вот оно все, 10 и 500 можно константами перед округлением определить:
+        int neededSpeed = (city.getDistanceKm()/time);
+        int newVehicleSpeed = neededSpeed % 10 == 0 ? neededSpeed : neededSpeed - neededSpeed % 10 + 10;
+        int newVehiclecapacity = weight % 500 == 0 ? weight :weight - weight % 500 + 500 ;
+
+        Ну и тернарник в данном случае немного запутывает, хотя, если методы округления убрать, то может будет полегче.
+        Сравните с вариантом:
+        if (neededSpeed<=40 && city.isOnWater()) return new Ship(SHIP_NAME, newVehiclecapacity, newVehicleSpeed, SHIP_COST);
+         if(neededSpeed>120 && city.hasAirport()) return new Plane(PLANE_NAME, newVehiclecapacity, newVehicleSpeed, PLANE_COST);
+         return new Truck(TRUCK_NAME, newVehiclecapacity, newVehicleSpeed, TRUCK_COST);
+
+        И плюс шесть строк определят константы (Spring позволит их читать из настроек)*/
+
 
 import org.example.model.*;
-import org.springframework.stereotype.Component;
 
-@Component
 public class TransportFactory {
 
     public Transport getTransport(City city, int weight, int hours){
 
-        float requiredSpeed = (float) city.getDistanceKm()/hours;
+        int requiredSpeed = city.getDistanceKm()/hours;
 
-        return requiredSpeed < 40 && city.isOnWater() ? getShip(getRightCapacity(weight), getRightSpeed(requiredSpeed))
-                : requiredSpeed > 120 && city.isHasAirport() ? getPlane(getRightCapacity(weight), getRightSpeed(requiredSpeed))
-                : getTruck(getRightCapacity(weight), getRightSpeed(requiredSpeed));
+        int ten = 10;
+        int roundedSpeed = requiredSpeed % ten == 0 ? requiredSpeed
+                        : requiredSpeed - requiredSpeed % ten + ten;
+        int five = 500;
+        int roundedCapacity = weight % five == 0 ? weight
+                        : weight - weight % five + five;
+
+        return requiredSpeed < 40 && city.isOnWater() ? getShip(roundedCapacity, roundedSpeed)
+                : requiredSpeed > 120 && city.isHasAirport() ? getPlane(roundedCapacity, roundedSpeed)
+                : getTruck(roundedCapacity, roundedSpeed);
     }
 
-    private int getRightSpeed (float requiredSpeed){
-
-        final int speedMultiplicity = 10;
-
-        return requiredSpeed<= speedMultiplicity ? speedMultiplicity
-                : requiredSpeed / speedMultiplicity == requiredSpeed % speedMultiplicity ? (int) requiredSpeed //Кажется бессмысленно лишний код... всё равно 2 операции - можно было просто посчитать последним условием
-                : (int) (Math.ceil(requiredSpeed / speedMultiplicity)* speedMultiplicity);
-    }
-
-    private int getRightCapacity (int weight){
-
-        final int weightMultiplicity = 500;
-
-        return weight <= weightMultiplicity ? weightMultiplicity
-                : (float) weight / weightMultiplicity == weight % weightMultiplicity ? weight //Кажется бессмысленно лишний код... всё равно 2 операции - можно было просто посчитать последним условием
-                : (int) (Math.ceil((float) weight/ weightMultiplicity))* weightMultiplicity;
-    }
 
     private Transport getTruck (int capacity, int speed ){
 
