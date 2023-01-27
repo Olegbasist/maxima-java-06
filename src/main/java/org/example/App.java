@@ -29,6 +29,7 @@ public class App
         ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
         TransportFactory transportFactory = context.getBean(TransportFactory.class);
 
+
         Logistics logistics = context.getBean(Logistics.class);
 
         City city = getRandomCity();
@@ -40,8 +41,8 @@ public class App
 
         System.out.println("Получаю транспорт от фабрики:");
         System.out.println(city);
-        System.out.println(transportFactory.getTransport(city,1000,240).getName());
-        System.out.println(transportFactory.getTransport(city,50,4).getName());
+        System.out.println(transportFactory.getTransport(city,1,1).toString());
+        System.out.println(getRandomTransportFromFactory(transportFactory));
 
     }
     public static City getRandomCity (){
@@ -52,14 +53,13 @@ public class App
 
         return new City("City of Random",distance,hasAirport,isOnWater);
         }
-        /*private static void getTransportFromFactory (TransportFactory factory){
+        private static Transport getRandomTransportFromFactory (TransportFactory transportFactory){
             Random random = new Random();
             int weight = random.nextInt(10000);
             int hours = random.nextInt(24);
 
-            System.out.println(factory.getTransport(getRandomCity(),weight,hours).getName());
-            //return factory.getTransport(getRandomCity(), weight,hours);
+            return transportFactory.getTransport(getRandomCity(), weight,hours);
 
-        }*/
+        }
 
 }
