@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model;
 //
 
 public class City {
@@ -83,5 +83,15 @@ public class City {
 
     public void setOnWater(boolean onWater) {
         isOnWater = onWater;
+    }
+
+    @Override
+    public String toString() {
+        return "City{" +
+                "name='" + name + '\'' +
+                ", distanceKm=" + distanceKm +
+                ", hasAirport=" + hasAirport +
+                ", isOnWater=" + isOnWater +
+                '}';
     }
 }

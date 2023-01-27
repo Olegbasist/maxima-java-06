@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model;
 
 //  22.09.2022 Описать Интерфейс Repairable
 //  с методами void startRepair(), void finishRepair(), boolean isRepairing().

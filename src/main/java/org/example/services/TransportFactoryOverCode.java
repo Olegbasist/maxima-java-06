@@ -1,10 +1,11 @@
-package org.example;
+package org.example.services;
 
 
+import org.example.model.*;
 import org.springframework.stereotype.Component;
 
 @Component
-public class TransportFactory {
+public class TransportFactoryOverCode {
 
     public Transport getTransport(City city, int weight, int hours){
 

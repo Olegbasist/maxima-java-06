@@ -1,4 +1,4 @@
-package org.example;
+package org.example.services;
 
 /*      Методы округления всегда вызываются с одними и теми же параметрами getRightCapacity(weight), getRightSpeed(requiredSpeed)
         - это индикатор того что в них нет вариативности, их код можно просто в getTransport включить.
@@ -17,7 +17,9 @@ package org.example;
         И плюс шесть строк определят константы (Spring позволит их читать из настроек)*/
 
 
-public class TransportFactoryAnotherTry {
+import org.example.model.*;
+
+public class TransportFactory {
 
     public Transport getTransport(City city, int weight, int hours){
 

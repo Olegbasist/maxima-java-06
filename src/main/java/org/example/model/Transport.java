@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model;
 
 //  22.09.2022  Запретить создание экземпляров класса Transport, метод getPrice сделать абстрактным.
 //
