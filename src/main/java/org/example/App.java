@@ -17,7 +17,7 @@ import java.util.Random;
 //  использовать разные способы их конфигурирования.
 //  Комментарий: Logistic описан двумя способами, это избыточно.
 // -----------------------------------------------------------------------------------
-// TODO: Модифицировать класс Logistics так,
+//  Модифицировать класс Logistics так,
 //  чтобы при отсутствии доступных транспортов фабрикой создавался бы новый транспорт.
 //
 // TODO: Метод getTransport в классе TransportFactory не должен быть статическим !!
@@ -28,14 +28,14 @@ public class App
         System.out.println("Поднимаю контекст ...");
 
         ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
-        TransportFactoryAnotherTry anotherTransportFactory = context.getBean(TransportFactoryAnotherTry.class);
-        TransportFactory transportFactory = context.getBean(TransportFactory.class);
+        //TransportFactoryAnotherTry anotherTransportFactory = context.getBean(TransportFactoryAnotherTry.class);
+        //TransportFactory transportFactory = context.getBean(TransportFactory.class);
 
         Logistics logistics = context.getBean(Logistics.class);
 
-        System.out.println("Даешь логистику!");
+        System.out.println("Даю логистику!");
         Transport vehicle = logistics.getShipping(getRandomCity(),1,0);
-        System.out.println(vehicle.getName());
+        System.out.println(vehicle.toString());
 
         /*System.out.println("Получаю транспорт:");
         City city = getRandomCity();
