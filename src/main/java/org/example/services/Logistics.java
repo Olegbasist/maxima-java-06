@@ -31,7 +31,7 @@ public class Logistics {
             }
 
 
-        return cheapestVehicle;
+        return cheapestVehicle != null ? cheapestVehicle : /* А иначе вот тут вызывается фабрика */ new TransportFactory().getTransport(city,weight,hours);
     }
 
     private boolean isShippingAvailable(City city, int weight, int hours, Transport obj){

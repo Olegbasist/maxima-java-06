@@ -7,16 +7,7 @@
     <list default="true" id="f30159f8-45b4-4896-8983-8fb381846b18" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Logistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/services/Logistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Plane.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Repairable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Repairable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Ship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Transport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransportFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/services/TransportFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransportFactoryAnotherTry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/services/TransportFactoryAnotherTry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Truck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/services/Logistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/services/Logistics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +46,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Олег\Documents\GitHub\maxima-java-06\src\main\java\org\example" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.model" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Run App" type="Application" factoryName="Application">
@@ -78,7 +72,7 @@
       <workItem from="1674469134561" duration="817000" />
       <workItem from="1674532844012" duration="9260000" />
       <workItem from="1674714894698" duration="1326000" />
-      <workItem from="1674815124173" duration="1887000" />
+      <workItem from="1674815124173" duration="2986000" />
     </task>
     <servers />
   </component>

@@ -2,6 +2,8 @@ package org.example;
 
 import org.example.config.SpringConfig;
 import org.example.model.City;
+import org.example.model.Transport;
+import org.example.services.Logistics;
 import org.example.services.TransportFactory;
 import org.example.services.TransportFactoryAnotherTry;
 import org.springframework.context.ApplicationContext;
@@ -29,11 +31,16 @@ public class App
         TransportFactoryAnotherTry anotherTransportFactory = context.getBean(TransportFactoryAnotherTry.class);
         TransportFactory transportFactory = context.getBean(TransportFactory.class);
 
-        System.out.println("Получаю транспорт:");
+        Logistics logistics = context.getBean(Logistics.class);
+
+        System.out.println("Даешь логистику!");
+        Transport vehicle = logistics.getShipping(getRandomCity(),1,0);
+        System.out.println(vehicle.getName());
+
+        /*System.out.println("Получаю транспорт:");
         City city = getRandomCity();
         System.out.println(anotherTransportFactory.getTransport(city,1000,240).getName());
-        System.out.println(transportFactory.getTransport(city,50,4).getName());
-
+        System.out.println(transportFactory.getTransport(city,50,4).getName());*/
 
     }
     public static City getRandomCity (){
