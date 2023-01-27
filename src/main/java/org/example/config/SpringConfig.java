@@ -1,5 +1,6 @@
-package org.example;
+package org.example.config;
 
+import org.example.services.TransportFactoryAnotherTry;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,9 +14,9 @@ public class SpringConfig {
         return new TransportFactoryAnotherTry();
     }
 
-    @Bean
+    /*@Bean
     public Logistics logistics (){
         return new Logistics();
-    }
+    }*/
 
 }

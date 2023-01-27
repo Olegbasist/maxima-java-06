@@ -1,7 +1,7 @@
-package org.example;
+package org.example.model;
 //
 
-public class Plane extends Transport{
+public class Plane extends Transport {
 
     public Plane(String name, int capacity, int speed, float costOfKm) {
         super(name, capacity, speed, costOfKm);

@@ -1,5 +1,9 @@
 package org.example;
 
+import org.example.config.SpringConfig;
+import org.example.model.City;
+import org.example.services.TransportFactory;
+import org.example.services.TransportFactoryAnotherTry;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -9,7 +13,7 @@ import java.util.Random;
 //  Взять необходимые классы из модуля 2
 //  Классы Logistics и TransportFactory модуля сделать бинами,
 //  использовать разные способы их конфигурирования.
-//  TODO: Комментарий: Logistic описан двумя способами, это избыточно.
+//  Комментарий: Logistic описан двумя способами, это избыточно.
 // -----------------------------------------------------------------------------------
 // TODO: Модифицировать класс Logistics так,
 //  чтобы при отсутствии доступных транспортов фабрикой создавался бы новый транспорт.
@@ -28,7 +32,7 @@ public class App
         System.out.println("Получаю транспорт:");
         City city = getRandomCity();
         System.out.println(anotherTransportFactory.getTransport(city,1000,240).getName());
-        System.out.println(transportFactory.getTransport(city,50,4));
+        System.out.println(transportFactory.getTransport(city,50,4).getName());
 
 
     }

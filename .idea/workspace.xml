@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f30159f8-45b4-4896-8983-8fb381846b18" name="Changes" comment="" />
+    <list default="true" id="f30159f8-45b4-4896-8983-8fb381846b18" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Logistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/services/Logistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Plane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Plane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Repairable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Repairable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Transport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Transport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransportFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/services/TransportFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TransportFactoryAnotherTry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/services/TransportFactoryAnotherTry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Truck.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +47,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Олег/Documents/GitHub/maxima-java-06/src/main/java/org/example&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Олег/Documents/GitHub/maxima-java-06/src/main/java/org/example&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;310d617ac3417330d5d5c362ca441f87&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -63,6 +77,8 @@
       <workItem from="1666694729252" duration="66000" />
       <workItem from="1674469134561" duration="817000" />
       <workItem from="1674532844012" duration="9260000" />
+      <workItem from="1674714894698" duration="1326000" />
+      <workItem from="1674815124173" duration="1887000" />
     </task>
     <servers />
   </component>

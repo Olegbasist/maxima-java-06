@@ -1,6 +1,7 @@
-package org.example;
+package org.example.services;
 
 
+import org.example.model.*;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,5 +1,7 @@
-package org.example;
+package org.example.services;
 
+import org.example.model.Transport;
+import org.example.model.City;
 import org.springframework.stereotype.Component;
 
 @Component
